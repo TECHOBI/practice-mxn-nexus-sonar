@@ -1,18 +1,50 @@
 package com.example.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootApplication
-public class DemoApplication {
+@SpringBootTest
+class DemoApplicationTests {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+	// @Before
+    // public void setup() {
+    //     app = new Application();
+    // }
+    
+    
+    // @Test
+    // public void testWordCountString() {
+    //     int count = app.countWords("this is a test");
+    //     assertTrue(count == 4);
+    // }
 
-		String name = "vamsi";
+    // @Test
+    // public void testWordCountEmpty() {
+    //     int count = app.countWords("");
+    //     assertTrue(count == 0);
+    // }
 
-		System.out.println(name);
+    // @Test
+    // public void testWordCountNull() {
+    //     int count = app.countWords(null);
+    //     assertTrue(count == 0);
+    // }
+
+    // @Test
+    // @Ignore
+    // public void testWordCountMore() {
+    //     int count = app.countWords("this will be skipped");
+    //     assertTrue(count == 3);
+    // }
+
+    // @Test
+    // public void testWordCountSingle() {
+    //     int count = app.countWords("test");
+    //     assertTrue(count == 1);
+    // }
+
+	@Test
+	void contextLoads() {
 	}
 
 }
-
